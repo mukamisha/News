@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        {% if title %}
+        <title> {{ title }}</title>
+        {% else %}
+        <title> Welcome to the best Movie Review website </title>
+        {% endif %}
+    </head>
+    <body>
+        
+           <!-- #getting general news -->
+            <h3> Entertainment news</h3>
+             <ul>
+                {% for general in general_news %}
+                    <li>{{ general.description}}</li>
+                {% endfor %}
+            </ul>
+     
+    </body>
+</html> 
+<!-- <h1>hello world</h1> -->
