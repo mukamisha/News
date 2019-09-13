@@ -1,13 +1,13 @@
 <!DOCTYPE html>
  <html>
-    <head>
+    <!-- <head>
         <meta charset="utf-8">
         {% if title %}
         <title> {{ title }}</title>
         {% else %}
         <title> Welcome to the best Movie Review website </title>
         {% endif %}
-    </head>
+    </head> -->
     <body>
         
            <!-- #getting general news -->
@@ -15,8 +15,18 @@
              <ul>
                 {% for general in general_news %}
                     <li>{{ general.description}}</li>
+                    <li>{{general.id}}</li>
+                    <li>{{general.name}}</li>
+                    <li>{{general.categoty}}</li>
+                    <li>{{general.url}}</li>
+                    <li>{{general.language}}</li>
+                    <a href=" /news/{{general_news.id}}">Read More{{general_news.id|truncate(10)}}</a>
+
+
                 {% endfor %}
             </ul>
+
+
      
     </body>
 </html> 
