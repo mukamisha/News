@@ -1,16 +1,5 @@
-<!DOCTYPE html>
- <html>
-    <!-- <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to the best Movie Review website </title>
-        {% endif %}
-    </head> -->
-    <body>
-        
-        
+{% extends 'base.html'%}
+{% block content%}
            <!-- #getting general news -->
             <h3> Entertainment news</h3>
              <ul>
@@ -18,17 +7,16 @@
                     <li>{{ general.description}}</li>
                     <li>{{general.id}}</li>
                     <li>{{general.name}}</li>
+
                     <li>{{general.categoty}}</li>
                     <li>{{general.url}}</li>
                     <li>{{general.language}}</li>
-                    <a href=" /news/{{general_news.id}}">Read More{{general_news.id|truncate(10)}}</a>
-
+                    <a href=" /news/{{general.id}}">Read More{{general.id|truncate(10)}}</a>
+                    
 
                 {% endfor %}
             </ul>
 
+{%endblock%}
 
-     
-    </body>
-</html> 
 <!-- <h1>hello world</h1> -->
