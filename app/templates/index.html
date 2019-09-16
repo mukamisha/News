@@ -1,9 +1,11 @@
 {% extends 'base.html'%}
 {% block content%}
            <!-- #getting general news -->
-            <h3> Entertainment news</h3>
+           <div class="row">
+            <h3> General news</h3>
              <ul>
                 {% for general in general_news %}
+                <div class="col-md-4">
                     <li>{{ general.description}}</li>
                     <li>{{general.id}}</li>
                     <li>{{general.name}}</li>
@@ -13,9 +15,10 @@
                     <li>{{general.language}}</li>
                     <a href=" /news/{{general.id}}">Read More{{general.id|truncate(10)}}</a>
                     
-
+                </div>
                 {% endfor %}
             </ul>
+            </div>
 
 {%endblock%}
 
