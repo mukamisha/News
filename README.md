@@ -7,4 +7,5 @@ this is a web application that helps you to retrieve information from the databa
 
 ## SETUP INSTALLATION REQUIRED:
 
+	*UBUNTU.
 	
