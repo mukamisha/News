@@ -11,4 +11,5 @@ this is a web application that helps you to retrieve information from the databa
 	*VISIO STUDIO CODE.	
     *GOOGLE CHROME
 ## TECHNOLOGY USED:
- 
+    * PYTHON.
+   
