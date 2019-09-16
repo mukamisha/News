@@ -1,11 +1,14 @@
 {% extends 'base.html'%}
 {% block content%}
            <!-- #getting general news -->
+        <div class="container">
            <div class="row">
             <h3> General news</h3>
              <ul>
                 {% for general in general_news %}
                 <div class="col-md-4">
+                    <div class="panel panel-default">
+                    <div class="panel-body">   
                     <li>{{ general.description}}</li>
                     <li>{{general.id}}</li>
                     <li>{{general.name}}</li>
@@ -13,12 +16,15 @@
                     <li>{{general.categoty}}</li>
                     <li>{{general.url}}</li>
                     <li>{{general.language}}</li>
-                    <a href=" /news/{{general.id}}">Read More{{general.id|truncate(10)}}</a>
-                    
+                    <a href=" /news/{{general.id}}">Read More</a>
+                    </div>
+                    </div> 
                 </div>
                 {% endfor %}
             </ul>
             </div>
+        </div>
+        
 
 {%endblock%}
 
