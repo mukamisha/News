@@ -23,3 +23,5 @@ this is a web application that helps you to retrieve information from the databa
 
    https://newsjacky.herokuapp.com
 
+## SUPPORT AND CONTACT 
+email:mukamishajacky97@gmail.com.
